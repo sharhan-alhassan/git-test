@@ -3,8 +3,17 @@
 ### Practic resource
 [freecodecamp](https://www-freecodecamp-org.cdn.ampproject.org/v/s/www.freecodecamp.org/news/practical-git-and-git-workflows/amp/?amp_js_v=a6&amp_gsa=1&usqp=mq331AQFKAGwASA%3D#aoh=16177855701263&csi=0&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fpractical-git-and-git-workflows%2F)
 
+
+### Populating a file with text
+1. Using `>>` will append the message to the file. Eg
+    touch message.txt
+    echo "Hello, worl" >> message.txt 
+2. Using `>` will overide or replace the contents with the new message in the file. Eg
+    echo "Clear and replace this message" > message.txgt
+    
+
 ### git status
-- this command tells us gives us the status of the project like where we are in (main or branch)
+- this command tells us or gives us the status of the project like where we are in (main or branch)
 - origin/main: actually *origin* is a new concept known as *remote*, which is the 'remote source' (github or bitbucket) different from what is on your local machine
 - github is our origin
 
@@ -35,3 +44,21 @@ Gives detail of each commit made with the date, commit message, and commit SHA -
     the output of the push gives:
     - `2566....aete(SHA) main - >main`
     - meaning, we have pushed our main branch to Github's main branch
+
+### git diff
+- A diff(short for difference) is the difference between two sets of changes. 
+    1. Lines starting with `(-)` are lines we deleted entirely or in part
+    2. Lines starting with `(+)` are lines we added
+- This process can look tiring, thus the existence of GUI program to implement this
+- The program is called `GitX`. 
+- Other alternatives are GitHub Desktop client. In fact, the github page or repository offers this wonderful tool
+
+## How to collaborate with others in Git
+- The power of git lies in working or collaborating with others on a project.
+- For best best practice, it is advisable not to work directly on the `main` branch. The `main` branch suppose to be the `source of truth` for the project and changes to it should be carefully reviewed. 
+- So it is appropriate to *branch* off our *main* into our own *feature branch* and then *merge* those changes back again into *main*
+
+### git chechout -b
+This command moves you out to a feature branch, for instance `git checkout -b chapter-2`. This basically mean, to `change my local project to look exactly like the project looked at some specific point in time`. It is basically identical to `main`
+
+
