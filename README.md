@@ -81,4 +81,10 @@ The first thing to do is first of all be in the primary branch. Since we want `m
 This commad is used to exit the branch and enter into the main. You need to specify the branch name, `main`. No need for the `-b` flag because we want to switch to an existing branch and not create a new one:
     - git checkout main
 
+### git merge chapter-2
+While inside the primary branch(main), we can then merge with the branch (chapter-2). Then we push our `local main` to our `origin main`
+
+### git branck -d chapter-2
+After we have finally pushed to the origin(remote Github), we move to delete the branch since it is no loner needed
+    - git branch -d chapter-2
 
