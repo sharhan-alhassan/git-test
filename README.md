@@ -61,4 +61,24 @@ Gives detail of each commit made with the date, commit message, and commit SHA -
 ### git chechout -b
 This command moves you out to a feature branch, for instance `git checkout -b chapter-2`. This basically mean, to `change my local project to look exactly like the project looked at some specific point in time`. It is basically identical to `main`
 
+## Git workflows for collaboration
+There are different workflows one can adopt depending your team's needs. Some are:
+
+1. First method: Say you've a branch called `chapter-2`, merge changes in `chapter-2` into the local `main` branch. This method is straightforward. 
+
+2. Second method: Push local `main` branch to `origin/main`. This method is a bit complicated but this is the workflow:
+    - Push our local `chapter-2` branch to origin--github(this creates a new branch on `origin` called `origin/chapter-2`)
+    - Merge `origin/chapter-2` into `origin/main` on Github
+    - Pull down the new changes from `origin/main` to our local `main`
+
+For solo developers, the `first method` will be okay but for team/group developemnt `second method` will be appropriate. 
+
+### git merge
+This command takes the content of one branch and merge it to the main branch.
+The first thing to do is first of all be in the primary branch. Since we want `main` to absorb the changes from the `chapter-2`, we first need to be on the `main` branch. 
+
+### git chechout
+This commad is used to exit the branch and enter into the main. You need to specify the branch name, `main`. No need for the `-b` flag because we want to switch to an existing branch and not create a new one:
+    - git checkout main
+
 
