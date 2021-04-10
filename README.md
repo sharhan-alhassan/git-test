@@ -84,7 +84,9 @@ This commad is used to exit the branch and enter into the main. You need to spec
 ### git merge chapter-2
 While inside the primary branch(main), we can then merge with the branch (chapter-2). Then we push our `local main` to our `origin main`
 
-### git branck -d chapter-2
+### git branch -d chapter-2
 After we have finally pushed to the origin(remote Github), we move to delete the branch since it is no loner needed
     - git branch -d chapter-2
 
+
+### Pull request workflow
