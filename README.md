@@ -106,12 +106,12 @@ A conflict occurs when merging two changes that have changed the same line a fil
 
 Say you've been given your first ticket at a new job: a small bug to squash in your team's product.
 
-The first thing you'd need to do is pull down the repo using git clone <URL>.
+The first thing you'd need to do is pull down the repo using git clone `<URL>`.
 
-Next, you'd want to make a feature branch off of main using git checkout -b <BRANCH_NAME>. After that, you'd fix the bug and commit the change(s) using git add and git commit.
+Next, you'd want to make a feature branch off of main using git checkout -b `<BRANCH_NAME>`. After that, you'd fix the bug and commit the change(s) using git add and git commit.
 
 Maybe solving this problem takes multiple commits—or maybe you make a few commits in an attempt to solve it before you finally arrive at the solution. That's ok too.
 
-After committing, you push your new branch to the origin (git push origin <BRANCH_NAME>) and create a pull request. After a code review your branch is merged in (yay!).
+After committing, you push your new branch to the origin `(git push origin <BRANCH_NAME>)` and create a pull request. After a code review your branch is merged in (yay!).
 
 You've now completed your feature, and it's time to switch back to main (using git checkout main), use git pull to get your latest changes plus any other changes other people have made, and start off again with a new branch.
