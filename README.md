@@ -3,7 +3,21 @@
 ### Practic resource
 [freecodecamp](https://www-freecodecamp-org.cdn.ampproject.org/v/s/www.freecodecamp.org/news/practical-git-and-git-workflows/amp/?amp_js_v=a6&amp_gsa=1&usqp=mq331AQFKAGwASA%3D#aoh=16177855701263&csi=0&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fpractical-git-and-git-workflows%2F)
 
+### Git Magic
 
+    git init
+    git remote -v 
+    git remote add origin
+    git pull origin main --allow-unrelated-histories
+    git add . 
+    git commint -m "message"
+    git push origin main
+    git config --global user.name
+    git config --global user.email
+    git gc //to collect gabbage
+    git gc --force //if the above doesn't work
+    git push --force //solves legendary problems
+    
 ### Populating a file with text
 1. Using `>>` will append the message to the file. Eg
     touch message.txt
