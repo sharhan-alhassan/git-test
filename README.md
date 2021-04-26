@@ -4,6 +4,7 @@
 [freecodecamp](https://www-freecodecamp-org.cdn.ampproject.org/v/s/www.freecodecamp.org/news/practical-git-and-git-workflows/amp/?amp_js_v=a6&amp_gsa=1&usqp=mq331AQFKAGwASA%3D#aoh=16177855701263&csi=0&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fpractical-git-and-git-workflows%2F)
 
 ### Git Magic
+### Part 1:
 
     git init
     git remote -v 
@@ -17,6 +18,24 @@
     git gc //to collect gabbage
     git gc --force //if the above doesn't work
     git push --force //solves legendary problems
+
+### Part 2: 
+### Create a new repo on the commmand line
+
+    echo "# build-django-framework" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/sharhan-alhassan/build-django-framework.git
+    git push -u origin main
+
+### Push an existing repo from the command line
+
+    git remote add origin https://github.com/sharhan-alhassan/build-django-framework.git
+    git branch -M main
+    git push -u origin main
+
     
 ### Populating a file with text
 1. Using `>>` will append the message to the file. Eg
